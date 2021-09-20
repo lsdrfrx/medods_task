@@ -7,10 +7,14 @@
 
 UID в обоих случаях передается через параметры:
 * localhost:8080/recieve?userid=`uid пользователя`
-* localhost:8080/refresh?userid=`uid пользователя`
+* localhost:8080/refresh?userid=`uid пользователя`\
 В случае пустого или неуказанного `userid` сервер отправляет `Status 400: Bad Request`
 
 В обоих токенах в Claims указывается `Timestamp: time.Now().Unix()` для связи Access и Refresh токенов и проверки валидности пары при Refresh-операции
+
+В процессе тестирования использовались:
+* MondoDBCompass
+* Postman
 
 ### Access-токен
 Алгоритм подписи: SHA-512\
