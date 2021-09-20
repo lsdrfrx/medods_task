@@ -3,7 +3,7 @@ package auth
 import "testing"
 
 func TestGenerateNewTokens(t *testing.T) {
-	at, rt, err := GenerateNewTokens("jopa")
+	at, rt, err := GenerateNewTokens("Jaba")
 	t.Logf(`
 		AccessToken:  %s
 		RefreshToken: %s
